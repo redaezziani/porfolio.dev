@@ -1,4 +1,4 @@
-# 👨🏻‍💻 My Portfolio Using Astro.Js and TialiwndCss
+# 👨🏻‍💻 My Portfolio Using Astro.Js and TialwindCss
 
 <div align="center">
 <a href="https://redaezziani">
