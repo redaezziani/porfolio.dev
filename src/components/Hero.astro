@@ -1,0 +1,49 @@
+---
+const personalImageAlt = "Miguel Ángel"
+import Badge from "@/components/Badge.astro"
+import SocialPill from "@/components/SocialPill.astro"
+import GitHub from "./icons/GitHub.astro"
+import LinkedIn from "./icons/LinkedIn.astro"
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-full shadow-lg size-16"
+      src="./profile-image.webp"
+      alt={personalImageAlt}
+    />
+    <a
+      href="https://github.com/redaezziani/"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <Badge>
+        Disponible for hire
+      </Badge>
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  >
+    Hello 👋, I'm Reda Ezziani 
+  </h1>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+>
+    +2 years of experience. <strong
+        >Software Engineer</strong
+    > from Morocco 🇲🇦. Specialized in developing unique web applications.
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="https://www.linkedin.com/in/reda-ezziani-43a121295/">
+      <LinkedIn class="size-4" />
+        LinkedIn
+    </SocialPill>
+    <SocialPill href="https://github.com/redaezziani/">
+      <GitHub class="size-4" />
+        GitHub
+    </SocialPill>
+  </nav>
+</div>
