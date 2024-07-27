@@ -2,9 +2,10 @@
 import GitHub from "./icons/GitHub.astro"
 import NextJS from "./icons/NextJS.astro"
 import Tailwind from "./icons/Tailwind.astro"
+import Laravel from "./icons/Laravel.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
-
+import Node from "./icons/Node.astro"
 const TAGS = {
   NEXT: {
     name: "Next.js",
@@ -16,24 +17,38 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+    LARAVEL: {
+        name: "Laravel",
+        class: "bg-[#FF2D20] text-white",
+        icon: Laravel,
+    },
+    NodeJS: {
+        name: "Node.js",
+        class: "bg-[#339933] text-white",
+        icon: Node,
+    },
+
+ 
+
 }
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "Jolt Laravle - e-commerce store",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "E-commerce store built with Laravel, Tailwind CSS,Livewire, and Alpine.js. Features include product search, cart, and checkout.",
+    github: "https://github.com/redaezziani/Jolt-store",
+    image: "/projects/jolt.webp",
+    link:"",
+    tags: [TAGS.LARAVEL, TAGS.TAILWIND],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "Node.js Ticketing System Api",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Ticketing system API built with Node.js, Express, and MongoDB. Features include user authentication, ticket creation, and ticket status updates.",
+    image: "/projects/api.webp",
+    link:"",
+    github: "https://github.com/redaezziani/ticketing-system-api",
+    tags: [TAGS.NodeJS],
   },
 ]
 ---
